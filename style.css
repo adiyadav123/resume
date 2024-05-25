@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "PP Hatton";
+  src: url('./hatton.otf');
+}
+
+@font-face {
+  font-family: "Big John PRO";
+  src: url('./big.otf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Product Sans";
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #101636;
+  padding: 30px 50px;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hatton {
+  font-family: "PP Hatton";
+}
+
+.bigjohn {
+  font-family: "Big John PRO";
+}
+
+.lightBlue {
+  color: #466fff;
+}
+
+.darkBlue {
+  color: #1d2549;
+}
+
+.grayish {
+  color: rgb(181, 180, 180);
+}
+
+.white {
+  color: white;
+}
+
+.left_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80%;
+  width: 30%;
+}
+
+.profile_card {
+  height: 210px;
+  width: 340px;
+  background-color: #1d2549;
+  padding: 20px;
+  border-radius: 10px;
+  height: 50%;
+}
+
+.profile_card .top {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.profile_card .top .details {
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.profile_card .top .details p {
+  color: rgb(181, 180, 180);
+  font-size: 14px;
+  font-family: "Big John PRO";
+}
+
+.profile_card .top .details h1 {
+  font-family: "PP Hatton";
+  font-size: 22px;
+}
+
+.profile_card .top img {
+  height: 100px;
+  width: 100px;
+  border: 5px solid #466fff;
+  border-radius: 50%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a i {
+  color: #466fff;
+}
+
+.profile_card .contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  color: #466fff;
+}
+
+.profile_card .contacts i {
+  padding: 5px;
+}
+
+.about {
+  width: 340px;
+  margin-top: 20px;
+  color: white;
+  height: 50%;
+}
+
+.about p {
+  font-family: "Big John PRO";
+  color: rgb(181, 180, 180);
+  padding: 10px;
+}
+
+.about h1 {
+  font-family: "PP Hatton";
+  font-size: 22px;
+}
+
+.right_container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background: #1d2549;
+  height: 80%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.right_container .languages {
+  display: flex;
+  width: 29%;
+  padding: 10px 10px;
+  flex-direction: column;
+  height: 20%;
+}
+
+.languages .lang {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_container .languages h1 {
+  font-size: 22px;
+}
+
+.lang_name {
+  padding: 5px 15px;
+  background-color: #343e6b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.right_container .skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right_container .skillss {
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.right_container .skillss h1 {
+  font-size: 22px;
+}
+
+.right_container .skills .skill_one {
+  padding-left: 10px;
+}
+
+.right_container .skills .skill_one .skill i, .right_container .skills .skill_two .skill i {
+  padding: 4px;
+}
+
+.right_container .skills .skill_one .skill, .right_container .skills .skill_two .skill {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.right_container .skills .skill_one .skill .html_progress, .right_container .skills .skill_two .skill .html_progress {
+  width: 150px;
+  height: 10px;
+  background-color: #466fff;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.right_container .skills .skill_one .skill .js_progress, .right_container .skills .skill_two .skill .js_progress {
+  width: 150px;
+  height: 10px;
+  background: linear-gradient(90deg, #466fff 85%, #343e6b 15%);
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.right_container .skills .skill_one .skill .next_progress, .right_container .skills .skill_two .skill .next_progress  {
+  width: 150px;
+  height: 10px;
+  background: linear-gradient(90deg, #466fff 60%, #343e6b 40%);
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.right_container .education {
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  flex-direction: column;
+}
+
+.right_container .education h1 {
+  font-size: 22px;
+}
+
+.right_container .education .edu {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_container .education .edu .edu_name {
+  padding: 5px 15px;
+  background-color: #343e6b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.recent_projects {
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  flex-direction: column;
+}
+
+.recent_projects h1 {
+  font-size: 22px;
+}
+
+.recent_projects p {
+  color: rgb(181, 180, 180);
+}
+
+
+@media screen and (max-width: 1000px) {
+  html,
+  body {
+    min-height: 100vh;
+    padding: 30px 10px; 
+    flex-direction: column;
+  }
+
+  .right_container {
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+  } 
+
+  .right_container .languages {
+    display: flex;
+    width: 100%;
+  }
+
+  .right_container .skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .right_container .education .edu {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .right_container .education .edu .edu_name {
+    margin: 10px;
+    width: 100%;
+  }
+
+
+   
+  
+}
