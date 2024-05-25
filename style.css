@@ -1,11 +1,11 @@
 @font-face {
   font-family: "PP Hatton";
-  src: url('./hatton.otf');
+  src: url('./src/hatton.otf');
 }
 
 @font-face {
   font-family: "Big John PRO";
-  src: url('./big.otf');
+  src: url('./src/big.otf');
 }
 
 
