@@ -64,7 +64,7 @@ body {
 
 .profile_card {
   height: 210px;
-  width: 340px;
+  width: 350px;
   background-color: #1d2549;
   padding: 20px;
   border-radius: 10px;
@@ -267,6 +267,21 @@ a i {
 
 .recent_projects p {
   color: rgb(181, 180, 180);
+}
+
+.footer {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 8vh;
+  background-color: #101636;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Big John PRO";
 }
 
 
